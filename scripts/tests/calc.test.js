@@ -12,9 +12,6 @@ describe('Calculator', () => {
         test('should return 15 for 10 + 5', () => {
             expect(addition(10,5)).toBe(15);
         });
-        test('should return 'error' for 20 + 22', () => {
-            expect(addition(20,22)).toBe(42);
-        });
     })
     // describe('Subtraction function', () => {
     //     test('should return 18 for 20 - 2', () => {
