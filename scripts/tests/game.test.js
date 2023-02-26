@@ -1,6 +1,6 @@
 const {
     game, newGame, addTurn, lightsOn, showTurns, playerTurn
-} = require('../game');
+} = require('../src/game');
 
 jest.spyOn(window, 'alert').mockImplementation(() => {})
 

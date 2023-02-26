@@ -18,7 +18,6 @@ const newGame = () => {
             circle.addEventListener('click', e => {
                 if (game.currentGame.length > 0 && !game.turnInProgress) {
                     let move = e.target.getAttribute('id');
-                    console.log(move);
                     game.lastButton = move;
                     lightsOn(move);
                     game.playerMoves.push(move);
@@ -36,7 +35,6 @@ const newGame = () => {
  * Add a randomly selected button to game.currentGame array
  */
 const addTurn = () => {
-    debugger
     game.playerMoves = [];
     const random = Math.floor(Math.random() * 4);
     game.currentGame.push(game.choices[random]);
@@ -47,7 +45,6 @@ const addTurn = () => {
  * Lits up the input button for 400ms
  */
 const lightsOn = (circ) => {
-    debugger
     const circle = document.getElementById(circ);
     circle.classList.add('light');
     setTimeout(() => {
@@ -57,13 +54,11 @@ const lightsOn = (circ) => {
 
 /** Add game.score element to the DOM */
 const showScore = () => {
-    debugger
     document.getElementById('score').innerText = game.score;
 }
 
 /** Shows the next challenge to the user by lighting up the buttons in game.currentGame array */
 const showTurns = () => {
-    debugger
     game.turnInProgress = true;
     game.turnNumber = 0;
     let turns = setInterval(() => {
@@ -80,7 +75,6 @@ const showTurns = () => {
  * adds one score, if the move is wrong gives an alert and restarts the game.
 */
 const playerTurn = () => {
-    debugger
     let i = game.playerMoves.length - 1;
     if (game.currentGame[i] === game.playerMoves[i]) {
         if (game.currentGame.length === game.playerMoves.length) {
@@ -93,6 +87,9 @@ const playerTurn = () => {
         newGame();
     }
 }
+
+const start = document.getElementById('startGame');
+start.addEventListener('click', newGame)
 
 module.exports = {
     game,
