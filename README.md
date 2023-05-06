@@ -4,7 +4,6 @@
 ## Languages and Technologies
 
 * JavaScript
-* jQuery
 * Jest
 * HTML
 * CSS
