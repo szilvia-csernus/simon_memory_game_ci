@@ -1,6 +1,15 @@
-### This project was created as a practice exercise for Code Institute's Web Application Development Course.
+### This project was created as a practice exercise by following [Matt Rudge](https://www.linkedin.com/in/mattrudge73/)'s walkthrough tutorial for Code Institute's Web Application Development Course. 
 
 ---
+## Languages and Technologies
+
+* JavaScript
+* jQuery
+* Jest
+* HTML
+* CSS
+
+----
 
 # Simon Game 
 
@@ -20,3 +29,9 @@ npm test
 
 Development http server can be started from the terminal:
 `python3 -m http.server`
+
+---
+
+## Credits
+
+[Matt Rudge](https://www.linkedin.com/in/mattrudge73/) from Code Institute - for the walkthrough tutorial
